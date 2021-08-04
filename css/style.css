@@ -1,0 +1,43 @@
+a:link,
+a:visited {
+  background-color: #717deead;
+  color:#72faa6;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover,
+a:active {
+  background-color: rgba(8, 7, 77, 0.616);
+}
+table,td,th{
+    border: 1px solid black;
+    color:#72faa6 ;
+   
+    right:300px;
+
+}
+tr:hover {background-color: #10ca73;}
+tr{
+    border: 1px springgreen;
+}
+
+
+
+body{
+    background-color: rgb(7, 79, 97);
+}
+h2{
+    color: #72faa6;
+}
+
+.open_hours{
+    font-size: 25px;
+    color:#72faa6 ;
+
+}
+.branch{
+    font-size: 20px;
+    color:#72faa6 ;
+}
