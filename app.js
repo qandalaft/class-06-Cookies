@@ -6,7 +6,7 @@ function randomNumber(min, max) {
 
 
 }
-//let randomHoursArray= []; 
+
 let storeName = [];
 let table = document.createElement('table');
 
@@ -65,14 +65,14 @@ function footerRow() {
 
 }
 
-function Location(countryName, min, max, avg, total, randomHoursArray) {
+function Location(countryName, min, max, avg) {
 
   this.userName = countryName;
   this.min = min;
   this.max = max;
   this.avg = avg;
-  this.randomHoursArray = randomHoursArray;
-  this.total = total;
+  this.randomHoursArray = [];
+  this.total = 0;
   storeName.push(this);
 
 }
@@ -128,6 +128,30 @@ for (let i = 0; i < storeName.length; i++) {
 
 footerRow();
 
+let insertLine = document.getElementById('insertLine')
+insertLine.addEventListener('submit', submitHandler);
+function submitHandler(event) {
+  event.preventDefault();
+  let location = event.target.location.value;
+
+  let min = event.target.min.value;
+
+  let max = event.target.max.value;
+
+
+  let branch = new Location(location, min, max, [], 0);
+
+
+  branch.renderA();
+
+  custperhour(min, max);
+
+
+
+
+
+
+}
 
 
 
