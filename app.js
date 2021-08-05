@@ -121,9 +121,11 @@ let Lima = new Location('Lima', 2, 16, 4.6, 0, []);
 
 headerRow();
 
+
 for (let i = 0; i < storeName.length; i++) {
   storeName[i].custperhour();
   storeName[i].renderA();
+
 }
 
 footerRow();
@@ -133,19 +135,14 @@ insertLine.addEventListener('submit', submitHandler);
 function submitHandler(event) {
   event.preventDefault();
   let location = event.target.location.value;
-
-  let min = event.target.min.value;
-
-  let max = event.target.max.value;
-
-
-  let branch = new Location(location, min, max, [], 0);
+  let min1 = event.target.min.value;
+  let max1 = event.target.max.value;
+  let avg1 = event.target.avg.value;
 
 
+  let branch = new Location(location, min1, max1, avg1);
   branch.renderA();
-
-  custperhour(min, max);
-
+  branch.custperhour(min1, max1);
 
 
 

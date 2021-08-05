@@ -35,9 +35,29 @@ h2{
 .open_hours{
     font-size: 25px;
     color:#72faa6 ;
+    font-family: 'MonteCarlo', cursive;
+
 
 }
 .branch{
     font-size: 20px;
     color:#72faa6 ;
+}
+h2{
+    font-family: 'MonteCarlo', cursive;
+}
+#avg{
+    font-family: 'MonteCarlo', cursive;
+}
+#min{
+    font-family: 'MonteCarlo', cursive;
+}
+#max{
+    font-family: 'MonteCarlo', cursive;
+}
+ul{
+    font-family: 'MonteCarlo', cursive;
+}
+p{
+    font-family: 'MonteCarlo', cursive;
 }
