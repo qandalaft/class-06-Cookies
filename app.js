@@ -140,9 +140,11 @@ function submitHandler(event) {
   let avg1 = event.target.avg.value;
 
 
-  let branch = new Location(location, min1, max1, avg1);
+  let branch = new Location(location, min1, max1, avg1, 0, []);
+  branch.custperhour(min, max);
   branch.renderA();
-  branch.custperhour(min1, max1);
+  footerRow();
+
 
 
 
